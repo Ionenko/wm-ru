@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#e9a851">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Анкета для front-end разработчика</title>
+    <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="description" content="Тестовое задание front-end">
+  <link href="./assets/css/vendors.e7298514106341638569.css" rel="stylesheet"><link href="./assets/css/app.72d5eaa9ad6322bc4234.css" rel="stylesheet"></head>
+  <body>
+<header class="header">
+  <div class="container">
+    <button class="hamburger hamburger--collapse hamburger--accessible js-hamburger u-visible-tablet" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+    <nav class="nav">
+      <div class="nav__close u-visible-tablet">&times;</div>
+      <div class="nav__list">
+        <div class="nav__item"><a class="nav__link" href="#personal">Личная информация</a></div>
+        <div class="nav__item"><a class="nav__link" href="#experience">Опыт</a></div>
+        <div class="nav__item"><a class="nav__link" href="#js">JavaScript</a></div>
+        <div class="nav__item"><a class="nav__link" href="#about">О себе</a></div>
+      </div>
+    </nav>
+  </div>
+</header>
+    <main>
+      <div class="questionnaire">
+        <div class="questionnaire__bg">&nbsp;</div>
+        <div class="container">
+          <h2 class="heading-primary">Анкета</h2>
+          <form class="form">
+            <div class="form__item" id="personal">
+              <picture class="form__icon"><img srcset="./assets/img/info-1x.png 1x, ./assets/img/info-2x.png 2x" src="./assets/img/info-2x.png" alt="Info icon"></picture>
+              <h4 class="form__heading u-mb-lg">Личная информация</h4>
+              <div class="fields">
+                <div class="field">
+                  <div class="field-inner">
+                    <input class="field-input" type="text" name="fullName" value="Ионенко Владимир Сергеевич">
+                    <label class="field-label">ФИО</label>
+                  </div>
+                </div>
+                <div class="field field__sm">
+                  <div class="field-inner">
+                    <select class="field-select" name="birthYear">
+                      <option value="">Год рождения</option>
+                      <option value="2002">2002</option>
+                      <option value="2002">2001</option>
+                      <option value="2002">2000</option>
+                      <option value="2002">1999</option>
+                      <option value="1998">1998</option>
+                      <option value="1997">1997</option>
+                      <option value="1996">1996</option>
+                      <option value="1995">1995</option>
+                      <option value="1994">1994</option>
+                      <option value="1993">1993</option>
+                      <option value="1992">1992</option>
+                      <option value="1991" selected>1991</option>
+                      <option value="1990">1990</option>
+                      <option value="1989">1989</option>
+                      <option value="1988">1988</option>
+                      <option value="1987">1987</option>
+                      <option value="1986">1986</option>
+                      <option value="1985">1985</option>
+                      <option value="1984">1984</option>
+                      <option value="1983">1983</option>
+                      <option value="1982">1982</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="field-inner">
+                    <input class="field-input" type="text" name="location" value="Украина, Харьков">
+                    <label class="field-label">Место проживания</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="field-inner">
+                    <input class="field-input" type="text" name="skype" value="ionenkovladimir@gmail.com">
+                    <label class="field-label">Skype</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="field-inner">
+                    <input class="field-input" type="text" name="email" value="ionenkovladimir@gmail.com">
+                    <label class="field-label">E-mail</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__item" id="experience">
+              <picture class="form__icon"><img srcset="./assets/img/list-1x.png 1x, ./assets/img/list-2x.png 2x" src="./assets/img/list-2x.png" alt="List icon"></picture>
+              <h4 class="form__heading u-mb-lg">Расскажите о своем опыте</h4>
+              <div class="form__checkboxes">
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>БЭМ/OOCSS</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>Верстаю семантично</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>Webpack</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>Stylus/LESS/SASS</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>ES2015/ES2016</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>jQuery</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>Работаю с SVG</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>Gulp/GRUNT</span>
+                  </label>
+                </div>
+                <div class="field">
+                  <label class="field-checkbox">
+                    <input class="field-checkbox__input" type="checkbox" checked name="skill"><span class="field-checkbox__element"></span><span>Ипользую Git</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form__item" id="js">
+              <picture class="form__icon"><img srcset="./assets/img/js-1x.png 1x, ./assets/img/js-2x.png 2x" src="./assets/img/js-2x.png" alt="JS icon"></picture>
+              <h4 class="form__heading u-mb-lg">Уровень владения JavaScript</h4>
+              <div class="range-slider" id="jsLevel"></div>
+            </div>
+            <div class="form__item" id="about">
+              <picture class="form__icon"><img srcset="./assets/img/about-1x.png 1x, ./assets/img/about-2x.png 2x" src="./assets/img/about-2x.png" alt="About icon"></picture>
+              <h4 class="form__heading">Расскажите о себе</h4>
+              <p class="form__text">Напишите несколько предложений, чем привлекла наша вакансия <br> и что вы ожидаете от работы у нас.</p>
+              <div class="fields">
+                <div class="field">
+                  <div class="field-inner">
+                    <textarea class="field-textarea" name="comment" placeholder="Понравилась тем, что...">Я фронтенд разработчик с опытом работы 4 года.
+Люблю активный отдых и спорт! Одно из любимых занятий - это прогулки на велосипеде.
+Что касается моих проффесиональных навыков, то эту информацию можно найти в моем резюме =)
+Чем меня заинтересовала Ваша компания:
+1. Вы предлагаете работу с крупными брендами и заметными проектами.
+2. Возможность карьерного роста
+3. Хороший уровень ЗП
+4. Удаленный формат работы
+</textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form__buttons">
+              <button class="btn">Готово</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript"></script>
+  <script type="text/javascript" src="./assets/js/vendors.88ec74a5c9c77fc3b684.js"></script><script type="text/javascript" src="./assets/js/app.f10c18ecccfe5eacce4b.js"></script></body>
+</html>
