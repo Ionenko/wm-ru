@@ -1,0 +1,91 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin size($width,$height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin placeholder {
+  &::placeholder {@content}
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin letterspacing( $tracking ){
+  letter-spacing: ( $tracking / 1000 ) * 1em;
+}
+
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+  -moz-box-sizing: $boxmodel;
+  box-sizing: $boxmodel;
+}
+
+@mixin max-width-phone {
+  @media only screen and (max-width: $phoneWidth - 1){ @content; }
+}
+
+@mixin max-width-phone-lg {
+  @media only screen and (max-width: $phoneWidthLg - 1){ @content; }
+}
+
+@mixin max-width-tablet {
+  @media only screen and (max-width: $tabletWidth - 1){ @content; }
+}
+
+@mixin max-width-tablet-lg {
+  @media only screen and (max-width: $tabletWidthLg - 1) { @content; }
+}
+
+@mixin max-width-desktop {
+  @media only screen and (max-width: $desktopWidth - 1) { @content; }
+}
+
+@mixin max-width-desktop-lg {
+  @media only screen and (max-width: $desktopWidthLg - 1) { @content; }
+}
+
+
+
+@mixin min-width-phone {
+  @media only screen and (min-width: $phoneWidth - 1){ @content; }
+}
+
+@mixin min-width-phone-lg {
+  @media only screen and (min-width: $phoneWidthLg - 1){ @content; }
+}
+
+@mixin min-width-tablet {
+  @media only screen and (min-width: $tabletWidth - 1){ @content; }
+}
+
+@mixin min-width-tablet-lg {
+  @media only screen and (min-width: $tabletWidthLg - 1) { @content; }
+}
+
+@mixin min-width-desktop {
+  @media only screen and (min-width: $desktopWidth - 1) { @content; }
+}
+
+@mixin min-width-desktop-lg {
+  @media only screen and (min-width: $desktopWidthLg - 1) { @content; }
+}

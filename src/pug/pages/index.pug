@@ -1,0 +1,136 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Анкета для front-end разработчика';
+	- var description = 'Тестовое задание front-end';
+	- var pageClass = '';
+
+block content
+	.questionnaire
+		.questionnaire__bg &nbsp;
+		.container
+			h2.heading-primary Анкета
+			form.form
+				.form__item#personal
+					picture.form__icon
+						img(srcset="./assets/img/info-1x.png 1x, ./assets/img/info-2x.png 2x" src="./assets/img/info-2x.png" alt="Info icon" )
+					h4.form__heading.u-mb-lg Личная информация
+					.fields
+						.field
+							.field-inner
+								input(type='text' name='fullName' value='Ионенко Владимир Сергеевич').field-input
+								label.field-label ФИО
+						.field.field__sm
+							.field-inner
+								select(name='birthYear').field-select
+									option(value="") Год рождения
+									option(value="2002") 2002
+									option(value="2002") 2001
+									option(value="2002") 2000
+									option(value="2002") 1999
+									option(value="1998") 1998
+									option(value="1997") 1997
+									option(value="1996") 1996
+									option(value="1995") 1995
+									option(value="1994") 1994
+									option(value="1993") 1993
+									option(value="1992") 1992
+									option(value="1991" selected) 1991
+									option(value="1990") 1990
+									option(value="1989") 1989
+									option(value="1988") 1988
+									option(value="1987") 1987
+									option(value="1986") 1986
+									option(value="1985") 1985
+									option(value="1984") 1984
+									option(value="1983") 1983
+									option(value="1982") 1982
+						.field
+							.field-inner
+								input(type='text' name='location' value='Украина, Харьков').field-input
+								label.field-label Место проживания
+						.field
+							.field-inner
+								input(type='text' name='skype' value='ionenkovladimir@gmail.com' ).field-input
+								label.field-label Skype
+						.field
+							.field-inner
+								input(type='text' name='email' value='ionenkovladimir@gmail.com').field-input
+								label.field-label E-mail
+				.form__item#experience
+					picture.form__icon
+						img(srcset="./assets/img/list-1x.png 1x, ./assets/img/list-2x.png 2x" src="./assets/img/list-2x.png" alt="List icon" )
+					h4.form__heading.u-mb-lg Расскажите о своем опыте
+					.form__checkboxes
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span БЭМ/OOCSS
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span Верстаю семантично
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span Webpack
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span Stylus/LESS/SASS
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span ES2015/ES2016
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span jQuery
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span Работаю с SVG
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span Gulp/GRUNT
+						.field
+							label.field-checkbox
+								input(type='checkbox' checked name='skill').field-checkbox__input
+								span.field-checkbox__element
+								span Ипользую Git
+				.form__item#js
+					picture.form__icon
+						img(srcset="./assets/img/js-1x.png 1x, ./assets/img/js-2x.png 2x" src="./assets/img/js-2x.png" alt="JS icon" )
+					h4.form__heading.u-mb-lg Уровень владения JavaScript
+					.range-slider#jsLevel
+				.form__item#about
+					picture.form__icon
+						img(srcset="./assets/img/about-1x.png 1x, ./assets/img/about-2x.png 2x" src="./assets/img/about-2x.png" alt="About icon" )
+					h4.form__heading Расскажите о себе
+					p.form__text Напишите несколько предложений, чем привлекла наша вакансия <br> и что вы ожидаете от работы у нас.
+					.fields
+						.field
+							.field-inner
+								textarea(name='comment' placeholder='Понравилась тем, что...').field-textarea.
+									Я фронтенд разработчик с опытом работы 4 года.
+									Люблю активный отдых и спорт! Одно из любимых занятий - это прогулки на велосипеде.
+									Что касается моих проффесиональных навыков, то эту информацию можно найти в моем резюме =)
+									Чем меня заинтересовала Ваша компания:
+									1. Вы предлагаете работу с крупными брендами и заметными проектами.
+									2. Возможность карьерного роста
+									3. Хороший уровень ЗП
+									4. Удаленный формат работы
+
+				.form__buttons
+					button.btn Готово
+block script
+	script(type='text/javascript').

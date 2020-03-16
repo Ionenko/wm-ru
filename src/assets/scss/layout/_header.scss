@@ -1,0 +1,8 @@
+.header {
+  padding: 3.2rem 0;
+  background-color: $color-white;
+
+  @include max-width-tablet {
+    padding: 2rem 0;
+  }
+}

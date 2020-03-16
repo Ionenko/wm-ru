@@ -1,0 +1,43 @@
+.u-mb-lg {
+  margin-bottom: 5rem !important;
+}
+
+.u-hidden {
+  &-tablet {
+    @media screen and (max-width: $tabletWidth) {
+      display: none !important;
+    }
+  }
+
+  &-tablet-lg {
+    @media screen and (max-width: $tabletWidthLg) {
+      display: none !important;
+    }
+  }
+
+  &-desctop {
+    @media screen and (max-width: $desktopWidth) {
+      display: none !important;
+    }
+  }
+}
+
+.u-visible {
+  &-tablet {
+    @media screen and (min-width: $tabletWidth) {
+      display: none !important;
+    }
+  }
+
+  &-tablet-lg {
+    @media screen and (min-width: $tabletWidthLg) {
+      display: none !important;
+    }
+  }
+
+  &-desctop {
+    @media screen and (min-width: $desktopWidth) {
+      display: none !important;
+    }
+  }
+}

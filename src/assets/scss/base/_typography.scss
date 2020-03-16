@@ -1,0 +1,38 @@
+body {
+  font-family: $default-font;
+  font-weight: $default-font-weight;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  color: $color-black;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.heading {
+  &-primary {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 6.7rem;
+    line-height: 7.9rem;
+    text-align: center;
+    margin: 0 0 3rem;
+
+    @include max-width-tablet {
+      font-size: 5.2rem;
+      line-height: 6.4rem;
+    }
+
+  }
+
+  &-secondary {
+  }
+
+  &-tertiary {
+  }
+
+  &-quaternary {
+  }
+}
